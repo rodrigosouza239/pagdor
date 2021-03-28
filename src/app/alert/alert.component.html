@@ -1,0 +1,24 @@
+<ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-button (click)="closeModal()">
+      <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content padding>
+  <div class="content">
+    <p class="ion-text-center"><img style="width: 80%;"
+        src="../../assets/icon/9626-levitate-meditate-peace-and-love.gif"></p>
+    <p style="font-family: lato;
+      font-size: 18px; color: #3E3E3E;" class="ion-text-center">Este aplicativo pode auxiliá-lo(a) nessa tarefa, contudo não substitui tratamentos e acompanhamentos realizados por
+      outros profissionais de saúde.</p>
+    <p class="ion-text-center">
+      <ion-chip (click)="confirm()" style="background:#3f2e91;">
+        <ion-icon style="color: #ffff;" name="thumbs-up"></ion-icon>
+        <ion-label style="font-family: lato;
+          font-size: 18px; color:#ffff">Estou ciente</ion-label>
+      </ion-chip>
+    </p>
+  </div>
+</ion-content>

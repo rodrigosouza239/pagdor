@@ -1,5 +1,8 @@
 {
   "name": "pagdor",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,19 @@
+<ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-button (click)="closeModal()">
+      <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content class="ion-padding">
+  <div class="content">
+    <p class="ion-text-center"><img style="width: 80%;" src="../../assets/16989-team-page.gif"></p>
+    <p style="font-family: lato; font-size: 18px; color: #3E3E3E; " class="ion-text-center">Agora você receberá dicas por meio de notificações que ajudarão a reduzir as suas dores na face e dos lados da cabeça!</p>
+    <p class="ion-text-center">
+      <ion-chip (click)="confirm();" style="background:#3f2e91;">
+        <ion-icon style="color: #ffff;" name="thumbs-up"></ion-icon>
+        <ion-label style="font-family: lato; font-size: 18px; color:#ffff;">Estou ciente</ion-label>
+      </ion-chip>
+    </p>
+  </div>
+</ion-content>

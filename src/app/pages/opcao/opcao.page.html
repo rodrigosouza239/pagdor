@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+ 
+    <div id="container">
+      <h2 style="font-family: lato; font-size: 23px; color: #3E3E3E;" class="ion-text-center">Você precisa dizer os horários em que costuma acordar e dormir.</h2><br><br>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p style="font-family: lato; font-size: 18px; color: #ed3732; margin-left: 20px; font-weight: bold;">Acordar
+            </p>
+            <ion-item>
+              <ion-icon style="font-size:30px; border: solid 1px; background:#ed3732 ; color:rgb(255, 255, 255);"
+                name="alarm"></ion-icon>
+              <ion-datetime [(ngModel)]="horaAcordar" placeHolder="00:00" doneText="Confirmar" cancelText="Cancelar"
+                display-format="HH:mm"></ion-datetime>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <p style="font-family: lato; font-size: 18px; color: #f7ac12; margin-left: 20px; font-weight: bold;">Dormir
+            </p>
+            <ion-item>
+              <ion-icon style="font-size:30px;border: solid 1px; background:#f7ac12 ; color:rgb(255, 255, 255);"
+                name="cloudy-night"></ion-icon>
+              <ion-datetime [(ngModel)]="horaDormir" placeHolder="00:00" doneText="Confirmar" cancelText="Cancelar"
+                display-format="HH:mm"></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+    </div>
+    <ion-fab  vertical="bottom" (click)="presentModal()" horizontal="center" slot="fixed">
+      <ion-fab-button class="darkblue">
+        <ion-icon name="checkmark"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+</ion-content>

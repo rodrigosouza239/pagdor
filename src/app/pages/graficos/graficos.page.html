@@ -1,0 +1,12 @@
+<ion-toolbar>
+
+</ion-toolbar>
+<ion-content class="state"><br><br>
+  <ion-card-content><canvas height="300x" *ngIf="lineChartData" baseChart [datasets]="lineChartData"
+      [labels]="lineChartLabels" [options]="lineChartOptions" [plugins]="lineChartPlugins" [legend]="lineChartLegend"
+      [chartType]="lineChartType" [colors]="colorChart"></canvas>
+    </ion-card-content>
+
+    <p class="ion-text-center" style="color:rgb(100,149,237)">Arraste para cima e volte a usar<br> seu smartphone !</p>
+  
+</ion-content>

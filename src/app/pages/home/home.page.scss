@@ -1,0 +1,17 @@
+ion-slides {
+    height: 100%;
+  }
+    ion-content{
+        --background:#3f2e91 ;
+        display: block;
+    }
+
+    ion-button{
+      --background:#fff;
+      --color:#000;
+      --border-color:#fff;
+      width: 7.6rem;
+      --border-style:solid;
+      --border-width:1px;
+      --border-radius:1px;
+    }
